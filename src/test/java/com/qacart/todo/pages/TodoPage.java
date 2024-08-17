@@ -15,7 +15,7 @@ public class TodoPage {
     private final By noTodosMessage = By.cssSelector("[data-testid=\"no-todos\"]");
 
     //Constructor
-    private TodoPage() { }
+    private TodoPage() {}
 
     public static TodoPage getInstance(){
         if (todoPage == null) {

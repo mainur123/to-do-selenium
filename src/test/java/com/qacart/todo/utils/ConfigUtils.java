@@ -1,10 +1,8 @@
 package com.qacart.todo.utils;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
-import java.util.Objects;
 import java.util.Properties;
 
 public class ConfigUtils {
@@ -34,8 +32,8 @@ public class ConfigUtils {
         return prop;
     }
 
-    public Object getBaseUrl(){
-        return prop.get("URL");
+    public String getBaseUrl(){
+        return prop.get("URL").toString();
     }
 
 }
