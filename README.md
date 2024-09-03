@@ -19,9 +19,13 @@ Overall, this framework is designed to be modular, reusable, and easily extendab
 
 ## Project Structure:
 **Models:** Contains classes like User, which represent the data structures used in the application.
+
 **Pages:** Includes page object classes like RegisterPage, NewtodoPage, and TodoPage that encapsulate the UI interactions for specific pages.
+
 **Factories:** The DriverFactory class is responsible for WebDriver instantiation, supporting multiple browsers.
+
 **Tests:** Test classes such as TodoTest and UserTest define the test scenarios and validate the application's behavior.
+
 **Utils:** Utility classes like ConfigUtils manage configuration settings and other helper functionalities.
 
 ## Purpose:
