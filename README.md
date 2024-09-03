@@ -1,7 +1,3 @@
-This project is a comprehensive Selenium-based test automation framework for a web application of Task Management, Prioritization, and Completion. 
-
-It is built with scalability, maintainability, and efficiency in mind, leveraging several key design patterns and best practices.
-
 ## Key Features:
 **Singleton Design Pattern:** Ensures only one instance of essential classes like UserApi, RegisterPage, TodoPage, and ConfigUtils exists during the test execution, promoting resource efficiency and consistent behavior across tests.
 
