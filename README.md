@@ -29,4 +29,4 @@ Overall, this framework is designed to be modular, reusable, and easily extendab
 **Utils:** Utility classes like ConfigUtils manage configuration settings and other helper functionalities.
 
 ## Purpose:
-This project aims to provide a robust foundation for automating the testing of web applications. By following industry best practices and design patterns, it ensures that the test suite is easy to maintain, extend, and scale. Whether testing simple forms or complex workflows, this framework is designed to handle various testing scenarios efficiently.
+By following industry best practices and design patterns, it ensures that the test suite is easy to maintain, extend, and scale. Whether testing simple forms or complex workflows, this framework is designed to handle various testing scenarios efficiently.
