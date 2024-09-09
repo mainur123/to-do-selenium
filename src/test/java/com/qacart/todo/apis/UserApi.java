@@ -22,13 +22,13 @@ public class UserApi {
 
     public Response register(User user){
         return given()
-                .baseUri(ConfigUtils.getInstance().getBaseUrl())
-                .contentType(ContentType.JSON)
-                .body(user)
+                    .baseUri(ConfigUtils.getInstance().getBaseUrl())
+                    .contentType(ContentType.JSON)
+                    .body(user)
                 .when()
-                .post("/api/v1/users/register")
+                    .post("/api/v1/users/register")
                 .then()
-                .extract().response();
+                    .extract().response();
     }
 
 }

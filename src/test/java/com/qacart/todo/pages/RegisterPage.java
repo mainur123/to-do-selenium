@@ -1,8 +1,11 @@
 package com.qacart.todo.pages;
 
+import com.qacart.todo.apis.UserApi;
 import com.qacart.todo.models.User;
 import com.qacart.todo.utils.ConfigUtils;
+import io.restassured.response.Response;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -39,6 +42,23 @@ public class RegisterPage {
         driver.findElement(passwordInput).sendKeys(user.getPassword());
         driver.findElement(confirmPasswordInput).sendKeys(user.getPassword());
         driver.findElement(submitButton).click();
+    }
+
+    public void registerUsingApi(WebDriver driver, User user){
+        Response res = UserApi.getInstance().register(user);
+
+        String access_token = res.path("access_token");
+        String userID = res.path("userID");
+        String firstName = res.path("firstName");
+        user.setAccessToken(access_token);
+
+        Cookie accessTokenCookie = new Cookie("access_token", access_token);
+        Cookie userIDCookie = new Cookie("userID", userID);
+        Cookie firstNameCookie = new Cookie("firstName", firstName);
+        driver.manage().addCookie(accessTokenCookie);
+        driver.manage().addCookie(userIDCookie);
+        driver.manage().addCookie(firstNameCookie);
+        RegisterPage.getInstance().load(driver);
     }
 
 

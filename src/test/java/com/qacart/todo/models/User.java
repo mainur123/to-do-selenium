@@ -1,5 +1,6 @@
 package com.qacart.todo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.javafaker.Faker;
 
 public class User {
@@ -8,6 +9,8 @@ public class User {
     private String lastName;
     private String email;
     private String password;
+    @JsonIgnore
+    private String accessToken;
 
     public User(String firstName, String lastName, String email, String password) {
         this.firstName = firstName;
@@ -57,5 +60,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getAccessToken() {
+        return accessToken;
+    }
+
+    public void setAccessToken(String accessToken) {
+        this.accessToken = accessToken;
     }
 }

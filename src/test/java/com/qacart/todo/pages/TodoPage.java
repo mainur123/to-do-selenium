@@ -1,5 +1,6 @@
 package com.qacart.todo.pages;
 
+import com.qacart.todo.utils.ConfigUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -22,6 +23,10 @@ public class TodoPage {
             todoPage = new TodoPage();
         }
         return todoPage; 
+    }
+
+    public void load(WebDriver driver){
+        driver.get(ConfigUtils.getInstance().getBaseUrl() +"/todo");
     }
 
     public boolean isWelcomeMessageDisplayed(WebDriver driver) {

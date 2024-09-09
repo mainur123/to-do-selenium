@@ -1,3 +1,5 @@
+com\qacart\todo\apis\UserApi.class
+com\qacart\todo\apis\TodoApi.class
 com\qacart\todo\pages\NewtodoPage.class
 com\qacart\todo\testCases\TodoTest.class
 com\qacart\todo\base\BaseTest.class

@@ -16,12 +16,12 @@ public class TodoTest extends BaseTest {
 
         User user = new User();
 
-        RegisterPage.getInstance().load(driver);
+        RegisterPage.getInstance().load(driver.get());
 
-        RegisterPage.getInstance().register(driver, user);
-        TodoPage.getInstance().clickOnPlusButton(driver);
-        NewtodoPage.getInstance().addTodo(driver, "Learn Selenium");
-        String text = TodoPage.getInstance().getTodoText(driver);
+        RegisterPage.getInstance().registerUsingApi(driver.get(), user);
+        TodoPage.getInstance().clickOnPlusButton(driver.get());
+        NewtodoPage.getInstance().addTodo(driver.get(), "Learn Selenium");
+        String text = TodoPage.getInstance().getTodoText(driver.get());
         Assert.assertEquals(text, "Learn Selenium");
     }
 
@@ -30,13 +30,13 @@ public class TodoTest extends BaseTest {
 
         User user = new User();
 
-        RegisterPage.getInstance().load(driver);
+        RegisterPage.getInstance().load(driver.get());
 
-        RegisterPage.getInstance().register(driver, user);
-        TodoPage.getInstance().clickOnPlusButton(driver);
-        NewtodoPage.getInstance().addTodo(driver, "Learn Selenium");
-        TodoPage.getInstance().deleteTodo(driver);
-        boolean isNoTodosDisplayed = TodoPage.getInstance().isNoTodoMessageDisplayed(driver);
+        RegisterPage.getInstance().registerUsingApi(driver.get(), user);
+        NewtodoPage.getInstance().addTodoUsingApi(user, "Learn Selenium");
+        TodoPage.getInstance().load(driver.get());
+        TodoPage.getInstance().deleteTodo(driver.get());
+        boolean isNoTodosDisplayed = TodoPage.getInstance().isNoTodoMessageDisplayed(driver.get());
         Assert.assertTrue(isNoTodosDisplayed);
     }
 
