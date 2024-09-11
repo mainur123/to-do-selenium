@@ -3,6 +3,7 @@ package com.qacart.todo.pages;
 import com.qacart.todo.apis.UserApi;
 import com.qacart.todo.models.User;
 import com.qacart.todo.utils.ConfigUtils;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -31,10 +32,12 @@ public class RegisterPage {
     }
 
     //Methods or, Steps
+    @Step("Visit the signup page")
 
     public void load(WebDriver driver) {
         driver.get(ConfigUtils.getInstance().getBaseUrl() +"/signup");
     }
+    @Step("Register using the UI")
     public void register(WebDriver driver, User user) {
         driver.findElement(firstNameInput).sendKeys(user.getFirstName());
         driver.findElement(lastNameInput).sendKeys(user.getLastName());
@@ -44,6 +47,7 @@ public class RegisterPage {
         driver.findElement(submitButton).click();
     }
 
+    @Step("Register using the API")
     public void registerUsingApi(WebDriver driver, User user){
         Response res = UserApi.getInstance().register(user);
 

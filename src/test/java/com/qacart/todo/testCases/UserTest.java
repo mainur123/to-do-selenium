@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class UserTest extends BaseTest {
 
-    @Test
+    @Test(description = "Should be able to signup")
     public void shouldBeAbleToRegisterToTheApplication() {
         User user = new User();
         RegisterPage.getInstance().load(driver.get());

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class TodoTest extends BaseTest {
 
-    @Test
+    @Test(description = "Should be able to add todo")
     public void shouldBeAbleToAddATodo() {
 
         User user = new User();
@@ -25,7 +25,7 @@ public class TodoTest extends BaseTest {
         Assert.assertEquals(text, "Learn Selenium");
     }
 
-    @Test
+    @Test(description = "Should be able to delete todo")
     public void shouldBeAbleToDeleteTodo(){
 
         User user = new User();
