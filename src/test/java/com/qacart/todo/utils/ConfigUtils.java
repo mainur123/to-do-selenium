@@ -33,7 +33,7 @@ public class ConfigUtils {
     }
 
     public String getBaseUrl(){
-        return prop.getProperty("URL").toString();
+        return prop.get("URL").toString();
     }
 
 }
