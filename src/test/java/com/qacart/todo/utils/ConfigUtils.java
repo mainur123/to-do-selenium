@@ -22,7 +22,7 @@ public class ConfigUtils {
 
     private Properties readProp() {
         try {
-            InputStream is = new FileInputStream("C:\\IJWorkspace\\to-do\\src\\test\\resources\\env\\production.properties");
+            InputStream is = new FileInputStream("src/test/resources/env/production.properties");
             prop = new Properties();
             prop.load(is);
             System.out.println(prop.get("URL"));

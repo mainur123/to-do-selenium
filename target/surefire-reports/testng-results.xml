@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T08:52:11 BDT" name="Surefire suite" finished-at="2024-09-11T08:52:50 BDT" duration-ms="38408">
+  <suite started-at="2024-09-19T06:24:52 BDT" name="Surefire suite" finished-at="2024-09-19T06:25:26 BDT" duration-ms="34003">
     <groups>
     </groups>
-    <test started-at="2024-09-11T08:52:11 BDT" name="Surefire test" finished-at="2024-09-11T08:52:50 BDT" duration-ms="38408">
+    <test started-at="2024-09-19T06:24:52 BDT" name="Surefire test" finished-at="2024-09-19T06:25:26 BDT" duration-ms="34003">
       <class name="com.qacart.todo.testCases.UserTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.UserTest@5cdf39b2]" started-at="2024-09-11T08:52:11 BDT" name="setup" finished-at="2024-09-11T08:52:23 BDT" duration-ms="11673" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.UserTest@3cd59ef5]" started-at="2024-09-19T06:24:52 BDT" name="setup" finished-at="2024-09-19T06:25:03 BDT" duration-ms="10791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="shouldBeAbleToRegisterToTheApplication()[pri:0, instance:com.qacart.todo.testCases.UserTest@5cdf39b2]" started-at="2024-09-11T08:52:24 BDT" name="shouldBeAbleToRegisterToTheApplication" description="Should be able to signup" finished-at="2024-09-11T08:52:34 BDT" duration-ms="10679" status="PASS">
+        <test-method signature="shouldBeAbleToRegisterToTheApplication()[pri:0, instance:com.qacart.todo.testCases.UserTest@3cd59ef5]" started-at="2024-09-19T06:25:03 BDT" name="shouldBeAbleToRegisterToTheApplication" description="Should be able to signup" finished-at="2024-09-19T06:25:13 BDT" duration-ms="9919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToRegisterToTheApplication -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.UserTest@5cdf39b2]" started-at="2024-09-11T08:52:35 BDT" name="tearDown" finished-at="2024-09-11T08:52:37 BDT" duration-ms="2265" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.UserTest@3cd59ef5]" started-at="2024-09-19T06:25:15 BDT" name="tearDown" finished-at="2024-09-19T06:25:21 BDT" duration-ms="6092" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=shouldBeAbleToRegisterToTheApplication status=SUCCESS method=UserTest.shouldBeAbleToRegisterToTheApplication()[pri:0, instance:com.qacart.todo.testCases.UserTest@5cdf39b2] output={null}]]]>
+                <![CDATA[[TestResult name=shouldBeAbleToRegisterToTheApplication status=SUCCESS method=UserTest.shouldBeAbleToRegisterToTheApplication()[pri:0, instance:com.qacart.todo.testCases.UserTest@3cd59ef5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -28,38 +28,38 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.qacart.todo.testCases.UserTest -->
       <class name="com.qacart.todo.testCases.TodoTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:11 BDT" name="setup" finished-at="2024-09-11T08:52:23 BDT" duration-ms="11861" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:24:52 BDT" name="setup" finished-at="2024-09-19T06:25:02 BDT" duration-ms="10712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:11 BDT" name="setup" finished-at="2024-09-11T08:52:23 BDT" duration-ms="11679" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:24:52 BDT" name="setup" finished-at="2024-09-19T06:25:03 BDT" duration-ms="10755" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="shouldBeAbleToAddATodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:24 BDT" name="shouldBeAbleToAddATodo" description="Should be able to add todo" finished-at="2024-09-11T08:52:47 BDT" duration-ms="23638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldBeAbleToAddATodo -->
-        <test-method signature="shouldBeAbleToDeleteTodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:24 BDT" name="shouldBeAbleToDeleteTodo" description="Should be able to delete todo" finished-at="2024-09-11T08:52:48 BDT" duration-ms="24756" status="PASS">
+        <test-method signature="shouldBeAbleToDeleteTodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:25:03 BDT" name="shouldBeAbleToDeleteTodo" description="Should be able to delete todo" finished-at="2024-09-19T06:25:25 BDT" duration-ms="22047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToDeleteTodo -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:47 BDT" name="tearDown" finished-at="2024-09-11T08:52:49 BDT" duration-ms="2316" status="PASS">
+        <test-method signature="shouldBeAbleToAddATodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:25:03 BDT" name="shouldBeAbleToAddATodo" description="Should be able to add todo" finished-at="2024-09-19T06:25:24 BDT" duration-ms="21064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeAbleToAddATodo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:25:24 BDT" name="tearDown" finished-at="2024-09-19T06:25:25 BDT" duration-ms="1239" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=shouldBeAbleToAddATodo status=SUCCESS method=TodoTest.shouldBeAbleToAddATodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b] output={null}]]]>
+                <![CDATA[[TestResult name=shouldBeAbleToAddATodo status=SUCCESS method=TodoTest.shouldBeAbleToAddATodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b]" started-at="2024-09-11T08:52:48 BDT" name="tearDown" finished-at="2024-09-11T08:52:50 BDT" duration-ms="1335" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc]" started-at="2024-09-19T06:25:25 BDT" name="tearDown" finished-at="2024-09-19T06:25:26 BDT" duration-ms="769" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=shouldBeAbleToDeleteTodo status=SUCCESS method=TodoTest.shouldBeAbleToDeleteTodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@a20b94b] output={null}]]]>
+                <![CDATA[[TestResult name=shouldBeAbleToDeleteTodo status=SUCCESS method=TodoTest.shouldBeAbleToDeleteTodo()[pri:0, instance:com.qacart.todo.testCases.TodoTest@14f3c6fc] output={null}]]]>
               </value>
             </param>
           </params>
