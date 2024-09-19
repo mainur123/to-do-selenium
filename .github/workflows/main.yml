@@ -19,7 +19,7 @@ jobs:
         uses: browser-actions/setup-chrome@latest
 
       - name: Verify properties file exists
-        run: ls -la src/main/resources/env # Verify that production.properties is in the correct folder
+        run: ls -la src/test/resources/env # Verify that production.properties is in the correct folder
 
 
       # Optional: Print environment information for debugging
