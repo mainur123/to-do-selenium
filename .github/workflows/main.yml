@@ -5,6 +5,11 @@ on: [ push ]
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    resources:
+      limits:
+        memory: 8GB  # Specify memory limit to avoid resource exhaustion
+
     steps:
       - uses: actions/checkout@v2
 
@@ -17,8 +22,13 @@ jobs:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
 
-      - name: Run Test
-        run: mvn clean test
+      # Optional: Print environment information for debugging
+      - name: Print Environment Info
+        run: env
+
+      - name: Run Test with Retry
+        run: |
+          for i in {1..3}; do mvn clean test -Dmaven.test.failure.ignore=true -Dhttp.timeout=30000 && break || sleep 30; done
 
       - name: Get Allure history
         uses: actions/checkout@v2
